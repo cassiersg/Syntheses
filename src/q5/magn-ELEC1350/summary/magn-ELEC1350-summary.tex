@@ -860,6 +860,32 @@ et allant de la région 2 vers la région 1.
 
 \subsection{Circuits magnétiques}
 
+Dans des cas pratiques, on utilise souvent des matériaux ferro-magnétiques,
+de grande perméabilité ($\mu_r ~ 1000$). Le champ magnétique $B$ est dès lors
+quasi nul à l'extérieur du matériau. Cela amène à la notion de circuit magnétique:
+on s'intéresse au champ uniquement à l'intétieur des "coducteurs" du circuit, et
+on néglige les "pertes". Sous cette approximation, on a les résultats suivants.
+
+\begin{itemize}
+\item Le flux $\Phi$ est conservé.
+\item La force magnétomotrice est définie \[\mathcal{F} = NI\]
+\item La réluctance est
+	\[\mathcal{R} = \frac{\oint \vec{H}\cdot\vec{\dif l}}{int \vec{B}\cdot\vec{\dif S}}\]
+\item Ces grandeurs vérifient la \emph{loi d'Hopkinson} \[Phi = \frac{\mathcal{F}}{\mathcal{R}}\]
+\end{itemize}
+
+On peut faire une analogie avec la théorie des circuits électriques:
+
+\begin{center}
+	\begin{tabular}{c|cl}
+		Électrique & Magnétique & \\ \hline
+		$V$ & $\mathcal{F}$ & "Source", s'additionne sur une boucle \\
+		$I$ & $\Phi$ & Conservé en tout noeud \\
+		$R$ & $\mathcal{R}$ & Lois de mise en parallèle/série \\
+		$V = RI$ & $\mathcal{F} = \mathcal{R} \Phi$ & La relation fondamentale... \\
+	\end{tabular}
+\end{center}
+
 \subsection{Energie potentielle magnétique}
 
 \subsection{Inductance propre et mutuelle}
@@ -959,10 +985,6 @@ et donc par identification
 
 % Blablabla boring
 
-
-\section{Circuits magnétiques}
-
-TODO
 
 \part{Éléments de circuit}
 
